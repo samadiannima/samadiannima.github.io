@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: #f7f7f7;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -26,4 +27,17 @@ a {
 
 h2 {
   margin-top: 2rem;
+}
+
+.hero-section {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
