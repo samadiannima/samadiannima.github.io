@@ -33,6 +33,7 @@ body {
   padding: 25px 0;
   box-shadow: 0 3px 5px rgba(0,0,0,0.1);
   z-index: 1000;
+  transition: top 0.3s ease;
 }
 
 .navbar ul {
@@ -105,18 +106,55 @@ section {
 }
 
 .sub-info {
-  padding: 30px;
+  padding: 40px;
   font-size: 1.4rem; /* normal paragraph */
 }
+
+
+.icon-row {
+  padding: 100px;
+  display: flex;
+  justify-content: center; /* or space-around / space-between */
+  gap: 40px; /* spacing between icons */
+  align-items: center; 
+}
+.icon-container {
+  text-align: center;
+  position: relative;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.hover-text {
+  display: none;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 8px;
+}
+.icon-container:hover .hover-text {
+  display: block;
+}
+.icon-container img {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.icon-container:hover img {
+  transform: scale(1.1); /* or whatever you're doing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 h2 {
   margin-bottom: 1rem;
   font-size: 5rem;
+  align-items: center;
 }
 
 /* Links */
 a {
-  color: #0055a5;
+  color: white;
   text-decoration: none;
   transition: text-decoration 0.3s ease;
 }
