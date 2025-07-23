@@ -63,6 +63,16 @@ body {
   border-radius: 10px;
 }
 
+.pic-location{
+  position:absolute;
+  top: 100px;
+  right: 30px;
+  font-size: 14px;
+  color: #1f1d1d;
+  font-style: italic;
+  z-index: 1;
+}
+
 /* Hero Section */
 .hero-section {
   width: 100vw;
